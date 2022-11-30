@@ -15,7 +15,7 @@
     executable: /bin/bash
 
 - name: Build dataset docker container
-  ansible.builtin.shell: docker build --tag ubuntu_32bit_compilator others/ubuntu_32bit_compilator
+  ansible.builtin.shell: sudo docker build --tag ubuntu_32bit_compilator others/ubuntu_32bit_compilator
   args:
     chdir: /home/{{ username }}/dataset/
 

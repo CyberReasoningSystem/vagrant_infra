@@ -17,6 +17,6 @@
     chdir: /home/{{ username }}/attack_surface_approximation/
 
 - name: Build attack_surface_approximation docker container
-  ansible.builtin.shell: docker build --tag qbdi_args_fuzzing others/qbdi_docker
+  ansible.builtin.shell: sudo docker build --tag qbdi_args_fuzzing others/qbdi_docker
   args:
     chdir: /home/{{ username }}/attack_surface_approximation/
